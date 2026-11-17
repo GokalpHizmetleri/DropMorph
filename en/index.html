@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DropMorph: drag, tap Shift, convert</title>
+<meta name="description" content="DropMorph is an offline file converter for Windows: tap Shift while dragging a file, pick a format, and the new file lands in the same folder.">
+<link rel="icon" href="../img/icon.png">
+<link rel="alternate" hreflang="tr" href="../">
+<link rel="alternate" hreflang="en" href="./">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <nav class="container" aria-label="Main">
+    <a href="../" hreflang="tr" lang="tr" data-lang="tr">Türkçe</a>
+    <a class="wordmark" href="./" aria-label="DropMorph home"><img src="../img/icon.png" width="36" height="36" alt="">DropMorph</a>
+    <a class="masthead__end" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Get it from the Store</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>Drag.<br>Tap.<br>Drop.</h1>
+        <p class="lead">Tap Shift while dragging a file, pick a format; the new file lands beside it.</p>
+        <div class="hero__actions">
+          <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Get it from Microsoft Store</a>
+        </div>
+        <p class="hero__note">For Windows 10 and 11. No internet needed.</p>
+      </div>
+      <figure class="shot shot--wheel">
+        <div class="shot__frame" data-slot="hero-wheel" data-kind="product" data-alt="The DropMorph format wheel open while a video is dragged, MKV highlighted">
+          <img src="../img/wheel-convert-en.png" width="460" height="560" alt="The format wheel open around a video file: MP4, MOV, MKV, WebM, GIF, MP3 and speed options" fetchpriority="high">
+        </div>
+        <figcaption>The wheel that opens when you tap Shift while dragging a video.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tools">
+    <div class="container split">
+      <div>
+        <h2 id="tools">Tap Ctrl for the tools.</h2>
+        <p class="lead">The same gesture, this time with tools that work on the file itself.</p>
+        <dl class="facts">
+          <div><dt>Transcribe</dt><dd>Speech in audio and video, as text and SRT subtitles.</dd></div>
+          <div><dt>Read text</dt><dd>Text in photos and scanned PDFs, as editable text.</dd></div>
+          <div><dt>Compress</dt><dd>For videos, photos and PDFs too big to email.</dd></div>
+        </dl>
+      </div>
+      <figure class="shot shot--wheel">
+        <div class="shot__frame" data-slot="tools-wheel" data-kind="product" data-alt="The DropMorph tools wheel in the dark theme, Mute highlighted">
+          <img src="../img/wheel-tools-en.png" width="460" height="560" alt="The tools wheel in the dark theme: compress, 720p, mute, rotate, transcribe, thumbnail, zip" loading="lazy">
+        </div>
+        <figcaption>The tools wheel, dark theme.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--s" aria-labelledby="measured">
+    <div class="container opens">
+      <h2 id="measured">Measured on real files.</h2>
+      <div class="table-wrap">
+        <table class="measure">
+          <thead><tr><th scope="col">File</th><th scope="col">Action</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Time</th></tr></thead>
+          <tbody>
+            <tr><td>4K drone video, 5 seconds</td><td>Convert to WebM</td><td class="num">43.7 MB</td><td class="num">11.8 MB</td><td class="num num--strong">2 s</td></tr>
+            <tr><td>Promo video, 43 seconds</td><td>Convert to WebM</td><td class="num">11.8 MB</td><td class="num">8.0 MB</td><td class="num num--strong">3 s</td></tr>
+            <tr><td>Photo-heavy PDF, 2 pages</td><td>Compress</td><td class="num">7.2 MB</td><td class="num">313 KB</td><td class="num num--strong">0.9 s</td></tr>
+            <tr><td>Speech in the promo video</td><td>Transcribe</td><td class="num">43 s of audio</td><td class="num">TXT and SRT</td><td class="num num--strong">2.3 s</td></tr>
+            <tr><td>A Turkish quote image</td><td>Read text</td><td class="num">PNG</td><td class="num">TXT</td><td class="num num--strong">0.1 s</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="caption">On a laptop with an NVIDIA RTX 4070, November 2026.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="quiet">
+    <div class="container split">
+      <div>
+        <h2 id="quiet">No windows, no interruptions.</h2>
+        <p class="lead">A small corner panel shows progress. When it’s done, click the new file.</p>
+      </div>
+      <figure class="shot">
+        <div class="well">
+          <div data-slot="hud" data-kind="product" data-alt="The progress panel in the bottom-right corner while a video converts to GIF"><img src="../img/hud-running-en.png" alt="Progress panel: tanitim.mp4, converting from MP4 to GIF" loading="lazy"></div>
+          <div data-slot="tray" data-kind="product" data-alt="The DropMorph panel from the notification area with the latest conversion"><img src="../img/tray-en.png" alt="Notification-area panel: ready, the last converted file and settings" loading="lazy"></div>
+        </div>
+        <figcaption>The progress panel and the notification-area menu.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--l" aria-labelledby="formats">
+    <div class="container opens">
+      <h2 id="formats">What turns into what</h2>
+      <ul class="index">
+        <li><h3>Images</h3><p>JPG, PNG, WebP, AVIF, TIFF, BMP, GIF, ICO, PDF</p></li>
+        <li><h3>Video</h3><p>MP4, MOV, MKV, WebM, AVI, WMV, GIF, MP3</p></li>
+        <li><h3>Audio</h3><p>MP3, M4A, WAV, FLAC, OGG, Opus, AIFF, WMA</p></li>
+        <li><h3>PDF</h3><p>Word, PowerPoint, PNG, JPG, text, EPUB</p></li>
+        <li><h3>Documents</h3><p>DOCX, ODT, RTF, Markdown, HTML, EPUB, PDF</p></li>
+        <li><h3>Data and sheets</h3><p>JSON, CSV, XLSX, XML, YAML</p></li>
+        <li><h3>Subtitles and archives</h3><p>SRT, VTT, ASS, ZIP, TAR</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band section--s" aria-label="Privacy">
+    <div class="container">
+      <p class="statement">Your files never leave your PC. DropMorph doesn’t go online and needs no account.</p>
+      <p class="band__link"><a href="privacy/">Read the privacy policy</a></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="get">
+    <div class="container split">
+      <div>
+        <h2 id="get">Ready? It’s in the Store.</h2>
+        <div class="hero__actions">
+          <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Get it from Microsoft Store</a>
+        </div>
+        <dl class="facts">
+          <div><dt>System</dt><dd>Windows 10 (version 1809 or later) or Windows 11, 64-bit.</dd></div>
+          <div><dt>Size</dt><dd>About 350 MB, video and speech recognition included.</dd></div>
+          <div><dt>Office</dt><dd>Optional. If installed, Word, Excel and PowerPoint files keep their exact layout.</dd></div>
+        </dl>
+      </div>
+      <figure class="shot shot--window">
+        <div class="shot__frame" data-slot="settings" data-kind="product" data-alt="The DropMorph settings window, General page">
+          <img src="../img/settings-general-en.png" width="900" height="640" alt="DropMorph settings: behavior, start with Windows, theme and accent colour" loading="lazy">
+        </div>
+        <figcaption>Settings: shortcuts, quality, theme.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="container">
+    <a class="wordmark" href="./" aria-label="DropMorph home"><img src="../img/icon.png" width="36" height="36" alt="">DropMorph</a>
+    <div>
+      <p>DropMorph is made by Gökalp Hizmetleri. For questions and support, write to <a href="mailto:support@gokalphizmetleri.rf.gd">support@gokalphizmetleri.rf.gd</a>; the <a href="privacy/">privacy policy</a> is here too.</p>
+      <p>© 2026 Gökalp Hizmetleri. Microsoft Store and Windows are trademarks of Microsoft.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () { try { localStorage.setItem('dm-lang', a.dataset.lang); } catch (e) {} });
+  });
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
