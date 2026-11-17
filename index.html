@@ -34,40 +34,28 @@
 <main id="main">
   <section class="hero">
     <div class="container hero__grid">
-      <div>
-        <h1>Sürükle.<br>Dokun.<br>Bırak.</h1>
-        <p class="lead">Dosyayı sürüklerken Shift’e dokun, formatı seç; yenisi aynı klasöre gelir.</p>
+      <h1>Dosyayı<br>sürüklerken<br>dönüştür.</h1>
+      <div class="hero__side">
+        <p class="lead">Shift’e dokun, formatı seç; yeni dosya aynı klasöre gelir.</p>
         <div class="hero__actions">
           <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Microsoft Store’dan al</a>
         </div>
         <p class="hero__note">Windows 10 ve 11 için. İnternet gerekmez.</p>
       </div>
-      <figure class="shot shot--wheel">
-        <div class="shot__frame" data-slot="hero-wheel" data-kind="product" data-alt="DropMorph format çarkı, bir video sürüklenirken açık, MKV dilimi seçili">
-          <img src="img/wheel-convert-tr.png" width="460" height="560" alt="Bir video dosyasının etrafında açılmış format çarkı: MP4, MOV, MKV, WebM, GIF, MP3 ve hız seçenekleri" fetchpriority="high">
-        </div>
-        <figcaption>Bir video sürüklenirken Shift’e dokununca açılan çark.</figcaption>
-      </figure>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="tools">
+  <section class="section section--s" aria-labelledby="tools">
     <div class="container split">
       <div>
         <h2 id="tools">Ctrl’ye dokun, araçlar açılır.</h2>
-        <p class="lead">Aynı hareket, bu kez dosyanın kendisi üzerinde çalışan araçlarla.</p>
-        <dl class="facts">
+      </div>
+      <dl class="facts">
           <div><dt>Yazıya dök</dt><dd>Ses ve videodaki konuşma, metin ve SRT altyazı olarak.</dd></div>
           <div><dt>Metni oku</dt><dd>Fotoğraftaki ve taranmış PDF’teki yazı, düzenlenebilir metin olarak.</dd></div>
           <div><dt>Sıkıştır</dt><dd>E-postaya sığmayan videolar, fotoğraflar ve PDF’ler için.</dd></div>
-        </dl>
-      </div>
-      <figure class="shot shot--wheel">
-        <div class="shot__frame" data-slot="tools-wheel" data-kind="product" data-alt="DropMorph araçlar çarkı, koyu tema, Sesi kaldır dilimi seçili">
-          <img src="img/wheel-tools-tr.png" width="460" height="560" alt="Koyu temada araçlar çarkı: sıkıştır, 720p, sesi kaldır, döndür, yazıya dök, kapak karesi, ZIP" loading="lazy">
-        </div>
-        <figcaption>Araçlar çarkı, koyu temada.</figcaption>
-      </figure>
+        <div><dt>Arka planda</dt><dd>Pencere açılmaz; köşedeki küçük panel ilerlemeyi gösterir.</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -90,21 +78,6 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="quiet">
-    <div class="container split">
-      <div>
-        <h2 id="quiet">Pencere açılmaz, işin bölünmez.</h2>
-        <p class="lead">Köşedeki küçük panel ilerlemeyi gösterir. Bitince yeni dosyaya tıklaman yeter.</p>
-      </div>
-      <figure class="shot">
-        <div class="well">
-          <div data-slot="hud" data-kind="product" data-alt="Ekranın sağ altındaki ilerleme paneli, bir video GIF’e dönüşürken"><img src="img/hud-running-tr.png" alt="İlerleme paneli: tanitim.mp4, MP4’ten GIF’e dönüştürülüyor" loading="lazy"></div>
-          <div data-slot="tray" data-kind="product" data-alt="Bildirim alanından açılan DropMorph paneli, son dönüşüm listesiyle"><img src="img/tray-tr.png" alt="Bildirim alanı paneli: hazır, son dönüştürülen dosya ve ayarlar" loading="lazy"></div>
-        </div>
-        <figcaption>İlerleme paneli ve bildirim alanındaki menü.</figcaption>
-      </figure>
-    </div>
-  </section>
 
   <section class="section section--l" aria-labelledby="formats">
     <div class="container opens">
@@ -135,18 +108,12 @@
         <div class="hero__actions">
           <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Microsoft Store’dan al</a>
         </div>
-        <dl class="facts">
+      </div>
+      <dl class="facts">
           <div><dt>Sistem</dt><dd>Windows 10 (1809 ve sonrası) ya da Windows 11, 64 bit.</dd></div>
           <div><dt>Boyut</dt><dd>Yaklaşık 350 MB; video ve konuşma tanıma dahil.</dd></div>
           <div><dt>Office</dt><dd>İsteğe bağlı. Kuruluysa Word, Excel ve PowerPoint birebir düzenle çevrilir.</dd></div>
-        </dl>
-      </div>
-      <figure class="shot shot--window">
-        <div class="shot__frame" data-slot="settings" data-kind="product" data-alt="DropMorph ayarlar penceresi, Genel sayfası">
-          <img src="img/settings-general-tr.png" width="900" height="640" alt="DropMorph ayarları: çalışma, Windows ile başlatma, tema ve vurgu rengi" loading="lazy">
-        </div>
-        <figcaption>Ayarlar: kısayollar, kalite, tema.</figcaption>
-      </figure>
+      </dl>
     </div>
   </section>
 </main>
@@ -166,7 +133,5 @@
     a.addEventListener('click', function () { try { localStorage.setItem('dm-lang', a.dataset.lang); } catch (e) {} });
   });
 </script>
-<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
-document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
 </body>
 </html>
