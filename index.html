@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DropMorph: sürükle, Shift’e dokun, dönüştür</title>
+<meta name="description" content="DropMorph, Windows için çevrimdışı dosya dönüştürücü: dosyayı sürüklerken Shift’e dokun, formatı seç, yenisi aynı klasöre gelir.">
+<link rel="icon" href="img/icon.png">
+<link rel="alternate" hreflang="tr" href="./">
+<link rel="alternate" hreflang="en" href="en/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,500..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="site.css">
+<script>
+  // Türkçe olmayan tarayıcıları İngilizce sayfaya yönlendir (bir kez seçim yapıldıysa ona uy)
+  try {
+    var pick = localStorage.getItem('dm-lang');
+    if (pick === 'en' || (!pick && !/^tr\b/i.test(navigator.language || ''))) location.replace('en/');
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">İçeriğe geç</a>
+
+<header class="masthead">
+  <nav class="container" aria-label="Ana menü">
+    <a href="en/" hreflang="en" lang="en" data-lang="en">English</a>
+    <a class="wordmark" href="./" aria-label="DropMorph ana sayfa"><img src="img/icon.png" width="36" height="36" alt="">DropMorph</a>
+    <a class="masthead__end" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Store’dan al</a>
+  </nav>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="container hero__grid">
+      <div>
+        <h1>Sürükle.<br>Dokun.<br>Bırak.</h1>
+        <p class="lead">Dosyayı sürüklerken Shift’e dokun, formatı seç; yenisi aynı klasöre gelir.</p>
+        <div class="hero__actions">
+          <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Microsoft Store’dan al</a>
+        </div>
+        <p class="hero__note">Windows 10 ve 11 için. İnternet gerekmez.</p>
+      </div>
+      <figure class="shot shot--wheel">
+        <div class="shot__frame" data-slot="hero-wheel" data-kind="product" data-alt="DropMorph format çarkı, bir video sürüklenirken açık, MKV dilimi seçili">
+          <img src="img/wheel-convert-tr.png" width="460" height="560" alt="Bir video dosyasının etrafında açılmış format çarkı: MP4, MOV, MKV, WebM, GIF, MP3 ve hız seçenekleri" fetchpriority="high">
+        </div>
+        <figcaption>Bir video sürüklenirken Shift’e dokununca açılan çark.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="tools">
+    <div class="container split">
+      <div>
+        <h2 id="tools">Ctrl’ye dokun, araçlar açılır.</h2>
+        <p class="lead">Aynı hareket, bu kez dosyanın kendisi üzerinde çalışan araçlarla.</p>
+        <dl class="facts">
+          <div><dt>Yazıya dök</dt><dd>Ses ve videodaki konuşma, metin ve SRT altyazı olarak.</dd></div>
+          <div><dt>Metni oku</dt><dd>Fotoğraftaki ve taranmış PDF’teki yazı, düzenlenebilir metin olarak.</dd></div>
+          <div><dt>Sıkıştır</dt><dd>E-postaya sığmayan videolar, fotoğraflar ve PDF’ler için.</dd></div>
+        </dl>
+      </div>
+      <figure class="shot shot--wheel">
+        <div class="shot__frame" data-slot="tools-wheel" data-kind="product" data-alt="DropMorph araçlar çarkı, koyu tema, Sesi kaldır dilimi seçili">
+          <img src="img/wheel-tools-tr.png" width="460" height="560" alt="Koyu temada araçlar çarkı: sıkıştır, 720p, sesi kaldır, döndür, yazıya dök, kapak karesi, ZIP" loading="lazy">
+        </div>
+        <figcaption>Araçlar çarkı, koyu temada.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--s" aria-labelledby="measured">
+    <div class="container opens">
+      <h2 id="measured">Gerçek dosyalarla ölçtük.</h2>
+      <div class="table-wrap">
+        <table class="measure">
+          <thead><tr><th scope="col">Dosya</th><th scope="col">İşlem</th><th scope="col">Önce</th><th scope="col">Sonra</th><th scope="col">Süre</th></tr></thead>
+          <tbody>
+            <tr><td>4K drone videosu, 5 saniye</td><td>WebM’e çevir</td><td class="num">43,7 MB</td><td class="num">11,8 MB</td><td class="num num--strong">2 sn</td></tr>
+            <tr><td>Tanıtım videosu, 43 saniye</td><td>WebM’e çevir</td><td class="num">11,8 MB</td><td class="num">8,0 MB</td><td class="num num--strong">3 sn</td></tr>
+            <tr><td>Fotoğraflı PDF, 2 sayfa</td><td>Sıkıştır</td><td class="num">7,2 MB</td><td class="num">313 KB</td><td class="num num--strong">0,9 sn</td></tr>
+            <tr><td>Tanıtım videosundaki konuşma</td><td>Yazıya dök</td><td class="num">43 sn ses</td><td class="num">TXT ve SRT</td><td class="num num--strong">2,3 sn</td></tr>
+            <tr><td>Türkçe bir teklif görseli</td><td>Metni oku</td><td class="num">PNG</td><td class="num">TXT</td><td class="num num--strong">0,1 sn</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="caption">NVIDIA RTX 4070’li bir dizüstü bilgisayarda, Kasım 2026.</p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="quiet">
+    <div class="container split">
+      <div>
+        <h2 id="quiet">Pencere açılmaz, işin bölünmez.</h2>
+        <p class="lead">Köşedeki küçük panel ilerlemeyi gösterir. Bitince yeni dosyaya tıklaman yeter.</p>
+      </div>
+      <figure class="shot">
+        <div class="well">
+          <div data-slot="hud" data-kind="product" data-alt="Ekranın sağ altındaki ilerleme paneli, bir video GIF’e dönüşürken"><img src="img/hud-running-tr.png" alt="İlerleme paneli: tanitim.mp4, MP4’ten GIF’e dönüştürülüyor" loading="lazy"></div>
+          <div data-slot="tray" data-kind="product" data-alt="Bildirim alanından açılan DropMorph paneli, son dönüşüm listesiyle"><img src="img/tray-tr.png" alt="Bildirim alanı paneli: hazır, son dönüştürülen dosya ve ayarlar" loading="lazy"></div>
+        </div>
+        <figcaption>İlerleme paneli ve bildirim alanındaki menü.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--l" aria-labelledby="formats">
+    <div class="container opens">
+      <h2 id="formats">Neyi neye çevirir</h2>
+      <ul class="index">
+        <li><h3>Görsel</h3><p>JPG, PNG, WebP, AVIF, TIFF, BMP, GIF, ICO, PDF</p></li>
+        <li><h3>Video</h3><p>MP4, MOV, MKV, WebM, AVI, WMV, GIF, MP3</p></li>
+        <li><h3>Ses</h3><p>MP3, M4A, WAV, FLAC, OGG, Opus, AIFF, WMA</p></li>
+        <li><h3>PDF</h3><p>Word, PowerPoint, PNG, JPG, metin, EPUB</p></li>
+        <li><h3>Belge</h3><p>DOCX, ODT, RTF, Markdown, HTML, EPUB, PDF</p></li>
+        <li><h3>Veri ve tablo</h3><p>JSON, CSV, XLSX, XML, YAML</p></li>
+        <li><h3>Altyazı ve arşiv</h3><p>SRT, VTT, ASS, ZIP, TAR</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="band section--s" aria-label="Gizlilik">
+    <div class="container">
+      <p class="statement">Dosyaların bilgisayarından hiç çıkmaz. DropMorph internete bağlanmaz, hesap istemez.</p>
+      <p class="band__link"><a href="gizlilik/">Gizlilik politikasını oku</a></p>
+    </div>
+  </section>
+
+  <section class="section" aria-labelledby="get">
+    <div class="container split">
+      <div>
+        <h2 id="get">Hazırsan, Store’da.</h2>
+        <div class="hero__actions">
+          <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Microsoft Store’dan al</a>
+        </div>
+        <dl class="facts">
+          <div><dt>Sistem</dt><dd>Windows 10 (1809 ve sonrası) ya da Windows 11, 64 bit.</dd></div>
+          <div><dt>Boyut</dt><dd>Yaklaşık 350 MB; video ve konuşma tanıma dahil.</dd></div>
+          <div><dt>Office</dt><dd>İsteğe bağlı. Kuruluysa Word, Excel ve PowerPoint birebir düzenle çevrilir.</dd></div>
+        </dl>
+      </div>
+      <figure class="shot shot--window">
+        <div class="shot__frame" data-slot="settings" data-kind="product" data-alt="DropMorph ayarlar penceresi, Genel sayfası">
+          <img src="img/settings-general-tr.png" width="900" height="640" alt="DropMorph ayarları: çalışma, Windows ile başlatma, tema ve vurgu rengi" loading="lazy">
+        </div>
+        <figcaption>Ayarlar: kısayollar, kalite, tema.</figcaption>
+      </figure>
+    </div>
+  </section>
+</main>
+
+<footer class="colophon">
+  <div class="container">
+    <a class="wordmark" href="./" aria-label="DropMorph ana sayfa"><img src="img/icon.png" width="36" height="36" alt="">DropMorph</a>
+    <div>
+      <p>DropMorph, Gökalp Hizmetleri’nin ürünüdür. Sorular ve destek için <a href="mailto:support@gokalphizmetleri.rf.gd">support@gokalphizmetleri.rf.gd</a> adresine yaz; <a href="gizlilik/">gizlilik politikası</a> da burada.</p>
+      <p>© 2026 Gökalp Hizmetleri. Microsoft Store ve Windows, Microsoft’un ticari markalarıdır.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () { try { localStorage.setItem('dm-lang', a.dataset.lang); } catch (e) {} });
+  });
+</script>
+<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
+document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
+</body>
+</html>
