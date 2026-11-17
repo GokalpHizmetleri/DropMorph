@@ -27,40 +27,28 @@
 <main id="main">
   <section class="hero">
     <div class="container hero__grid">
-      <div>
-        <h1>Drag.<br>Tap.<br>Drop.</h1>
-        <p class="lead">Tap Shift while dragging a file, pick a format; the new file lands beside it.</p>
+      <h1>Convert<br>files<br>mid-drag.</h1>
+      <div class="hero__side">
+        <p class="lead">Tap Shift, pick a format; the new file lands beside the original.</p>
         <div class="hero__actions">
           <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Get it from Microsoft Store</a>
         </div>
         <p class="hero__note">For Windows 10 and 11. No internet needed.</p>
       </div>
-      <figure class="shot shot--wheel">
-        <div class="shot__frame" data-slot="hero-wheel" data-kind="product" data-alt="The DropMorph format wheel open while a video is dragged, MKV highlighted">
-          <img src="../img/wheel-convert-en.png" width="460" height="560" alt="The format wheel open around a video file: MP4, MOV, MKV, WebM, GIF, MP3 and speed options" fetchpriority="high">
-        </div>
-        <figcaption>The wheel that opens when you tap Shift while dragging a video.</figcaption>
-      </figure>
     </div>
   </section>
 
-  <section class="section" aria-labelledby="tools">
+  <section class="section section--s" aria-labelledby="tools">
     <div class="container split">
       <div>
         <h2 id="tools">Tap Ctrl for the tools.</h2>
-        <p class="lead">The same gesture, this time with tools that work on the file itself.</p>
-        <dl class="facts">
-          <div><dt>Transcribe</dt><dd>Speech in audio and video, as text and SRT subtitles.</dd></div>
-          <div><dt>Read text</dt><dd>Text in photos and scanned PDFs, as editable text.</dd></div>
-          <div><dt>Compress</dt><dd>For videos, photos and PDFs too big to email.</dd></div>
-        </dl>
       </div>
-      <figure class="shot shot--wheel">
-        <div class="shot__frame" data-slot="tools-wheel" data-kind="product" data-alt="The DropMorph tools wheel in the dark theme, Mute highlighted">
-          <img src="../img/wheel-tools-en.png" width="460" height="560" alt="The tools wheel in the dark theme: compress, 720p, mute, rotate, transcribe, thumbnail, zip" loading="lazy">
-        </div>
-        <figcaption>The tools wheel, dark theme.</figcaption>
-      </figure>
+      <dl class="facts">
+          <div><dt>Transcribe</dt><dd>Speech in audio and video, as text and subtitles.</dd></div>
+          <div><dt>Read text</dt><dd>Text in photos and scanned PDFs, made editable.</dd></div>
+          <div><dt>Compress</dt><dd>Videos, photos and PDFs, sized for email.</dd></div>
+        <div><dt>In the background</dt><dd>No windows; a corner panel shows progress.</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -83,21 +71,6 @@
     </div>
   </section>
 
-  <section class="section" aria-labelledby="quiet">
-    <div class="container split">
-      <div>
-        <h2 id="quiet">No windows, no interruptions.</h2>
-        <p class="lead">A small corner panel shows progress. When it’s done, click the new file.</p>
-      </div>
-      <figure class="shot">
-        <div class="well">
-          <div data-slot="hud" data-kind="product" data-alt="The progress panel in the bottom-right corner while a video converts to GIF"><img src="../img/hud-running-en.png" alt="Progress panel: tanitim.mp4, converting from MP4 to GIF" loading="lazy"></div>
-          <div data-slot="tray" data-kind="product" data-alt="The DropMorph panel from the notification area with the latest conversion"><img src="../img/tray-en.png" alt="Notification-area panel: ready, the last converted file and settings" loading="lazy"></div>
-        </div>
-        <figcaption>The progress panel and the notification-area menu.</figcaption>
-      </figure>
-    </div>
-  </section>
 
   <section class="section section--l" aria-labelledby="formats">
     <div class="container opens">
@@ -128,18 +101,12 @@
         <div class="hero__actions">
           <a class="btn" href="https://apps.microsoft.com/detail/9NZP9TCX924Z">Get it from Microsoft Store</a>
         </div>
-        <dl class="facts">
+      </div>
+      <dl class="facts">
           <div><dt>System</dt><dd>Windows 10 (version 1809 or later) or Windows 11, 64-bit.</dd></div>
           <div><dt>Size</dt><dd>About 350 MB, video and speech recognition included.</dd></div>
           <div><dt>Office</dt><dd>Optional. If installed, Word, Excel and PowerPoint files keep their exact layout.</dd></div>
-        </dl>
-      </div>
-      <figure class="shot shot--window">
-        <div class="shot__frame" data-slot="settings" data-kind="product" data-alt="The DropMorph settings window, General page">
-          <img src="../img/settings-general-en.png" width="900" height="640" alt="DropMorph settings: behavior, start with Windows, theme and accent colour" loading="lazy">
-        </div>
-        <figcaption>Settings: shortcuts, quality, theme.</figcaption>
-      </figure>
+      </dl>
     </div>
   </section>
 </main>
@@ -159,7 +126,5 @@
     a.addEventListener('click', function () { try { localStorage.setItem('dm-lang', a.dataset.lang); } catch (e) {} });
   });
 </script>
-<script>window.hallmarkSlots = (m) => { for (const [k, v] of Object.entries(m)) { const s = document.querySelector(`[data-slot="${k}"]`); if (!s) continue; const im = new Image(); im.src = typeof v === 'string' ? v : v.src; im.alt = (typeof v === 'object' && v.alt) || s.dataset.alt || ''; s.querySelectorAll(':scope > img').forEach((o) => o.remove()); s.prepend(im); } };
-document.querySelectorAll('[data-slot] img').forEach((i) => { if (i.complete && !i.naturalWidth) i.remove(); else i.addEventListener('error', () => i.remove(), { once: true }); });</script>
 </body>
 </html>
